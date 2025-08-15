@@ -22,6 +22,18 @@
 			],
 			"isBackground": false,
 			"group": "build"
+		},
+		{
+			"label": "Upload ESP32 Code Fixed",
+			"type": "shell",
+			"command": "C:\\Users\\rob.barnard\\.platformio\\penv\\Scripts\\platformio.exe",
+			"args": [
+				"run",
+				"--target",
+				"upload"
+			],
+			"isBackground": false,
+			"group": "build"
 		}
 	]
 }

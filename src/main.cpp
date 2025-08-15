@@ -849,7 +849,7 @@ void checkForPerson() {
     last_ai_check = millis();
     
     // Configure camera for faster AI detection
-    configureCameraForAI();
+    // configureCameraForAI();
     
     // Small delay to let camera adjust
     delay(100);
@@ -857,7 +857,7 @@ void checkForPerson() {
     camera_fb_t * fb = esp_camera_fb_get();
     if (!fb) {
       Serial.println("Failed to get frame for AI detection");
-      configureCameraForWeb(); // Restore camera settings
+      // configureCameraForWeb(); // Restore camera settings
       return;
     }
     
@@ -880,7 +880,7 @@ void checkForPerson() {
     esp_camera_fb_return(fb);
     
     // Restore camera to high quality for web interface
-    configureCameraForWeb();
+    // configureCameraForWeb();
   }
 }
 
@@ -1768,12 +1768,12 @@ void handleTestAIDetection() {
   Serial.println("Testing AI detection with current camera frame...");
   
   // Configure camera for faster AI detection
-  configureCameraForAI();
+  // configureCameraForAI();
   delay(100); // Let camera adjust
   
   camera_fb_t * fb = esp_camera_fb_get();
   if (!fb) {
-    configureCameraForWeb(); // Restore camera settings
+    // configureCameraForWeb(); // Restore camera settings
     server.send(500, "application/json", "{\"success\":false,\"error\":\"Failed to capture image\"}");
     return;
   }
@@ -1784,7 +1784,7 @@ void handleTestAIDetection() {
   esp_camera_fb_return(fb);
   
   // Restore camera to high quality
-  configureCameraForWeb();
+  // configureCameraForWeb();
   
   String response = "{";
   response += "\"success\":true,";
