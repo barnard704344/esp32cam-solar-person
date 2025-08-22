@@ -250,15 +250,6 @@ For issues and questions:
 - Monitor serial output for debug information
 - Test individual components (AI server, mesh, notifications)
 
-## 🔮 Future Roadmap
-
-- [ ] Mobile app for remote monitoring
-- [ ] Advanced motion detection algorithms
-- [ ] Cloud integration options
-- [ ] Enhanced power management
-- [ ] Automatic firmware updates
-- [ ] Video streaming capabilities
-- [ ] Machine learning model optimization
 
 ---
 
